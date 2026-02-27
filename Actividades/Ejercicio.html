@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+#pantalla1.activa{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+   
+    
+}
+#pantalla2{
+    background-color: rgb(153, 0, 255);
+    height: 100%;
+    width: 100%;
+ 
+
+ }
+#pantalla3{
+    background-color: rgb(0, 42, 255);
+      height: 100%;
+    width: 100%;
+}
+.activa{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+    left: 0;
+ }
+section{
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(100%);
+    position: absolute;
+    bottom: 0;
+     
+}
+button{
+    height: 50px;
+    width: 100px;;
+}
+
+
+#boton1:hover{
+    border: 5px solid red;
+}
+</style>
+<body>
+    <section id="pantalla1"  class="activa">
+        <h1>Estoy en la pantalla 1, ¿quieres seguir aquí jugando?</h1>
+        <br>         
+        <div>
+            <button id="boton1" onclick="activarpantalla('pantalla2')">Si</button>
+            <button onclick="activarpantalla('pantalla3')">No</button>
+        </div>
+
+    </section>
+    <section id="pantalla2">
+        <p>Genial</p>
+        <div>
+            <button onclick="activarpantalla('pantalla1')">Si</button>
+            <button onclick="activarpantalla('pantalla3')">No</button>
+            </div>
+    </section>
+    <section id="pantalla3">
+        <p>Pues pírate</p>
+        <div>
+            <button onclick="activarpantalla('pantalla1')">Si</button>
+            <button onclick="activarpantalla('pantalla2')">No</button>
+            </div>
+    </section>
+</body>
+<script>
+
+    function activarpantalla(id){
+        document.getElementById("pantalla1").classList.remove("activa");
+        document.getElementById("pantalla2").classList.remove("activa");
+        document.getElementById("pantalla3").classList.remove("activa");
+        document.getElementById(id).classList.add("activa");
+    }
+</script>
+</html>

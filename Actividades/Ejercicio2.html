@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aventura de Lee</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      display: none;
+      position: absolute;
+      inset: 0;
+      height: 100vh;
+      background: #000;
+      color: #fff;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+    section.activa {
+      display: flex;
+    }
+    section p {
+      max-width: 800px;
+      margin: 6px 0;
+       
+    }
+    button {
+      background-color: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin-top: 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3573b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PANTALLA 1 -->
+  <section id="pantalla1" class="activa">
+    <h1>Aventura de Lee</h1>
+    <p>En esta aventura acompañaremos al ninja Lee, mítico personaje de la historia del anime Naruto,</p>
+    <p>a través de combates y pruebas difíciles que necesita superar si quiere aprobar el examen "Chunin".</p>
+    <p>==================================================</p>
+    <p>¿Estás preparado?</p>
+    <p>"Rock Lee", ¡vamos allá!</p>
+    <button onclick="irAPantalla('pantalla2')">Siguiente</button>
+  </section>
+
+  <!-- PANTALLA 2 -->
+  <section id="pantalla2">
+    <p>Empezamos nuestra historia en la villa oculta de la hoja, donde para poder empezar su primer combate,
+       nuestro héroe deberá superar una pequeña prueba de ingenio.</p>
+    <p>En este caso deberá de superar la mítica prueba del 'Piedra, papel y tijera', parece fácil, pero...
+       ¿demostrará nuestro héroe el suficiente ingenio para ello?</p>
+    <button onclick="irAPantalla('pantalla3')">Siguiente</button>
+  </section>
+
+  <!-- PANTALLA 3 -->
+  <section id="pantalla3">
+    <p>Despues de mucho esperar a que los demás participantes acabasen sus pruebas, llegó el momento que todos esperaban,
+       el primer combate de los exámenes 'Chunin'.</p>
+    <p>Sin embargo, Lee aunque había superado la prueba de habilidad sin problemas, no podía quitarse de la cabeza el combate,
+al fin y al cabo era la primera vez que se enfretntaba a algo así en su vida...
+Tras un sorteo aleatorio a nuestro enemigo le toco enfrentarse a Sakura.</p>
+<p>tras observar en otros momentos, ya contaba con algunas de las habilidades de su oponente como: Chidori, Sharingan, Suriken Demoníaco</p>
+<p>Así que una vez realizado el sorteo y una vez colocados en sus posiciones... alguien exclamó: ¡QUE EMPIECE EL COMBATE!</p>
+    <button onclick="irAPantalla('pantalla4')">Siguiente</button>
+  </section>
+
+  <!-- PANTALLA 4 -->
+  <section id="pantalla4">
+    <p>Tras el combate y un merecido descanso, llega la hora de la siguiente prueba de habilidad, 
+       en este caso Lee se enfrentaba a la conocida prueba de 'cara o cruz', a Lee le parecía muy sencillo, pero...
+       ¿tendrá nuestro héroe la pericia para superar esta prueba a la primera?</p>
+    <button onclick="irAPantalla('pantalla5')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 5 -->
+  <section id="pantalla5">
+    <p>Tras superar la segunda prueba de 'habilidad' (algunos lo cuestionarán...,
+       hubo una segunda ronda, dónde según los resultados de la ronda anterior, 
+       nuestro héroe tuvo que enfrentarse a su siguiente oponente:Naruto </p>
+       <p>Del cual ya se sabía todas las habilidades Rasengan, Modo Sabio, Copias
+De nuevo aquella voz volvió a resonar: ¡¡QUE COMIENZE LA BATALLA!!</p>
+    <button onclick="irAPantalla('pantalla6')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 6 -->
+  <section id="pantalla6">
+    <p>Tras su segunda victoria, Lee necesitaba un descanso, y este no dudó en tomarselo.</p>
+    <p>Después de una buena ducha caliente y una cena digna de un campeón, Lee se fué a dormir,
+       pero por muy satisfecho que que sintiera, no podía quitarse de la cabeza la gran final
+       que le esperaba al día siguiente...</p>
+       <p>¿Se alzará nuestro héroe con la victoria?</p>
+    <button onclick="irAPantalla('pantalla7')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 7 -->
+  <section id="pantalla7">
+    <p>A la mañana siguiente el su maestro fué a despertarle, y para su sorpresa descubrió que Lee
+      ya se había levantado, pero... ¿donde estaba?</p>
+      <p>Tras mucho buscar, y preguntar decidió ir a buscarle fuera de la aldea...</p>
+      <p>De repente, el maestro Maito Gai, escuchó un fuerte estruendo que venía del bosque, 
+          asi que decidió adentrarse para descubrir de donde venía.</p>
+      <p>A medida que se adentraba en la espesura, el ruido se hacía más fuerte.... ¡BAAAM! ¡SPLASH! ¡KABOOOM!</p>
+      <p>Al llegar al lugar de donde procedían los golpes, se encontró a un Lee agotado, rodeado de un montón de cadaveres
+         de osos y lobos enormes....</p>
+    <button onclick="irAPantalla('pantalla8')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 8 -->
+  <section id="pantalla8">
+    <p>Lee esa mañana decidió salir a entrenar un poco, cuando de repente se encontró de frente con dos manadas diferentes
+       una de lobos y otra de osos, que luchaban entre sí por el territorio.</p>
+<p>Al intentar esconderse, pisó una rama que había en el suelo (si, ya se que es lo típico),
+lo que llamó la atencion de todos los depredadores que allí se encontraban....</p>
+<p>Al verle como una presa fácil, estos no dudaron en dejar de pelear entre sí y avalanzarse sobre nuestro protagonista,
+al cual no le quedó más remedio que enfrentarse a todos ellos dando lo mejor de sí....</p>
+<p>Lee, al ver a su maestro apareciendo de entre la maleza, no pudo evitar desmayarse debido al agotamiento...</p>
+<p>Maito Gai apenas le dió tiempo de llegar a sostenerlo antes de que este cayese al suelo.</p>
+    <button onclick="irAPantalla('pantalla9')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 9 -->
+  <section id="pantalla9">
+    <p>Cuando Lee despertó, se encontro rodeado de sus amigos, los cuales le miraban con cara de preocupación,
+       Lee dió un salto para incorporarse de la cama, ya que no podía quitarse de la cabeza el echo de que hoy.
+       ¡Era el gran día de la final!</p>
+       <p>A nuestro héroe le tocó enfrentarse a su último oponente: Sasuke.
+
+       </p>
+       <p>Salió corriendo al escenario de los combates 'chunin' donde le esperaba su último contrincante: 1, 
+          cuando llegó vió que su oponente se había sorprendido al verle, ya que este habia dado por supuesto que no se iba a presentar,
+          debido a lo tarde que se había hecho...</p>
+        <p>A lo que 1exclamo: 'Todavía te queda pasar la tercera prueba' y soltó una gran carcajada...</p>
+        <p>Algo que a Lee no le hizo ninguna gracia y le lleno de ira por dentro, ya que después de lo que le había pasado
+           le pareció como un insulto....</p>
+        <p>Pero de todas formas tenía razón... Pero Lee ya estaba lleno de odio y dispuesto a atacar...</p>
+        <p>¿Tu que harías, atacarías o realizarías la siguiente prueba?</p>
+
+    <button onclick="irAPantalla('pantalla10')">Atacar</button>
+    <button onclick="irAPantalla('pantalla12')">Prueba</button>
+  </section>
+  <!-- PANTALLA 10 -->
+  <section id="pantalla10">
+    <p>Lee se avalazó sobre su contrincante con toda la determinación que le había llevado a sobrevivir esa noche,
+pero antes de que pudiera llegar a su enemigo, el maestro Jiraiya se puso en medio y grito:</p>
+      <p>¡¡DESCALIFICADO!!</p>
+      <p>A un Lee tembloroso por la ira que sentía y con lágrimas en los ojos, no le quedo mas remedio que aceptar esadecisión,
+darse media vuelta y volver por donde había llegado....</p>
+<p>===============================</p>
+<p>Horas más tarde, el maestro Maito Gai volvió a donde encontró a su discipulo cuando lo buscaba por el bosque,
+este lo encontro tirando piedras al río y maldiciendo en arameo...</p>
+<p>Gai se sento en una roca, y después de observarlo durante un rato le preguntó: ¿Ya estas mejor?</p>
+<p>Lee lo miró de reojo, pero siguió a lo suyo, pero esta vez en silencio.</p>
+<p>Gai insistio en seguir intentando hablar, pero Lee parecía no escuchar...</p>
+
+    <button onclick="irAPantalla('pantalla11')">Siguiente</button>
+  </section>
+  <!-- PANTALLA 11 -->
+  <section id="pantalla11">
+  <p>Cuando el maestro se cansó de hablar con una pared, se acercó a el, le cogio por los hombros, y mirandole a los ojos le dijo: Yo hubiese hecho lo mismo, pero las reglas son las reglas, y hay que aprender a respetarlas por muy injustas que nos parezcan,
+cuanto antes entiendas esta lección antes lograrás apagar el fuego que hay en tu interior...</p>
+<p>Acto seguido sacó unas gyozas y unos baos que llevaba consigo el maestro y se los entregó a Lee mientras le sacudía el pelo con cariño.</p>
+<p>Despues se dió la vuelta y desapareció en la espesura del bosque.</p>
+<p>Lee se sentó en la misma roca en la que minutos antes se encontraba su maestro, y mientras se comía el almuerzo,
+pensó en la suerte que tenía de tener a alguien comprensivo que le entendía y respetaba sus decisiones, aunque no fuese la correcta</p>
+<p>======================================</p>
+<p>Lee esta vez aprendió una buena lección para la vida...."La vida no es justa".</p>
+<h2>FIN</h2>
+    <button onclick="irAPantalla('pantalla1')">Volver al inicio</button>
+    
+  </section>
+  <!-- PANTALLA 12 -->
+  <section id="pantalla12">
+    <p>En esta prueba deberás adivinar de que año son las siguientes 5 canciones,
+deberás elegior entre el año 2000 o el año 2001. Tendrás 5 intentos, uno por cada canción.</p>
+<p>Si no consigues superar la prueba deberás ir un año a clase de cultura musical con el maestro Jackson.</p>
+    <button onclick="irAPantalla('pantalla13')">Ganas</button>
+    <button onclick="irAPantalla('pantalla14')">Pierdes</button>
+  </section>
+  <!-- PANTALLA 13 -->
+  <section id="pantalla13">
+    <p>Después de haber superado la última prueba, Lee se preparó para el combate mas difícili
+de los exámenes 'Chunin'.</p>
+<p>Después de unos segundos de mirada intensa de los participantes,
+el maestro Jaraiya, preguntó: '¡Estais preparados!</p>
+<p>Ambos asintieron sin dejar de mirarse....</p>
+<p>¡QUE COMIENCE EL COMBATE!</p>
+    <button onclick="irAPantalla('pantalla15')">Ganas</button>
+    <button onclick="irAPantalla('pantalla16')">Pierdes</button>
+  </section>
+  <!-- PANTALLA 14 -->
+  <section id="pantalla14">
+    <p>No has pasado la última prueba, deberás abandonar la academia ninja y dedicarte
+a entrenar tu cerebro con una de las 7 maravillas del mundo, la música.</p>
+<p>=======================================</p>
+<p>En ese momento Lee sintió el verdadero terror, no había ni llegado a la final por
+culpa de una prueba de cultura general (Rockera)...</p>
+<p>Lee avergonzado, miro a su maestro, el cual le dijo: Eso te pasa por escuhar esa bazofia del Reggeaton,
+tienes los tímpanos atrofiados, ya puedes ponerte las pilas para el año que viene.</p>
+<p>Lee entendió que no todo en esta vida es trabajar los músculos en un gimnasio y aprendió que el alma
+es una parte del cuerpo que hay que ejercitar día a día.</p>
+<h2>FIN</h2>
+    <button onclick="irAPantalla('pantalla1')">Volver al inicio</button>
+  </section>
+  <!-- PANTALLA 15 -->
+  <section id="pantalla15">
+    <p>Tras un choque final, que creó una nuve de polvo que apenas dejaba ver mas allá
+de un palmo de sus narices, aparecieron los dos luchadores dándose la espalda.</p>
+<p>Tras unos segundos, uno de ellos, calló al suelo....</p>
+<p>Para sorpresa de algunos, pero no de todos, incluido el maestro Gai,
+el que se derrumbó fué Sasuke.</p>
+<p>El maesto Jiraiya exclamó: ¡FIN EL COMBATE, EL GANADOR ES LEE! </p>
+<p>Después de un combate como ninguno de los alumnos había visto hasta ahora,
+Lee se hizo con la victoria... (como todos esperábamos, ¿no?)</p>
+<p>Gracias a esta última victoria, nuestro héroe ganó en popularidad,
+Y se proclamó como uno de los personaje mas fuertes desde este momento.</p>
+<p>Sin embargo, este no es el final del camino de nuestro personaje, quién sabe que aventuras
+le quedaran por vivir, y sobre todo, ¿llegará algún día a combertirse en 'Hokage'?</p>
+<h2>FIN</h2>
+    <button onclick="irAPantalla('pantalla1')">Volver al inicio</button>
+  </section>
+  <!-- PANTALLA 16 -->
+  <section id="pantalla16">
+    <p>Tras un choque final, que creó una nuve de polvo que apenas dejaba ver mas allá
+de un palmo de sus narices, aparecieron los dos luchadores dándose la espalda.</p>
+<p>Tras unos segundos, uno de ellos, calló al suelo....</p>
+<p>EL maestro Gai, mientras se desplomaba y daba un puñetazo al suelo, exclamó: ¡No puede ser!</p>
+<p>Cuando la nube de polvo se difuminó un poco, nuestro héroe estaba tendido en el suelo...</p>
+<p>============================</p>
+<p>Cuando Lee despertó en su cama, no encontró a nadie a su lado, y pensó que tras su derrota en la final,
+su maestro estara avergonzado de él.</p>
+<p>Salió de su cuarto con la cabeza gacha y sin mucho ánimo....</p>
+<p>Mientras desayunaba, el maestro Gai entro por la puerta y se sentó a su lado sin decir una palabra...</p>
+<p>Lee esperaba, que su maestro le digese algo, pero no hubo iniciativa...</p>
+<p>Tras unos minutos en silencio, Lee ya no aguanto más y le dijo: Maestro, siento haberte decepcionado ayer en la final, lo intenté con todas  is fuerzas,
+pero no pude hacer más, el contrincante era mejor que yo en todos los sentidos,
+prometo que entrenaré dura para que esto no vuelva a ocurrir...</p>
+
+    <button onclick="irAPantalla('pantalla17')">Siguiente</button>
+  </section>
+  
+  <!-- PANTALLA 17 -->
+  <section id="pantalla17">
+  <p>Su maestro lo miro con una media senrisa y le contestó: En esta vida no podemos juzgar nuestro valor como persona por las victorias que cosechamos,
+si no por los esfuerzos que hacemos y que estamos dispuestos a hacer, que no ganases ayer,
+no indica que valgas menos que los demás o que seas más débil, lo que indica, es que debemos
+seguir entrenando y superándonos a nosotros mismos, es eso consiste el éxito, en conseguir
+las metas que nosotros mismos nos proponemos...</p>
+<p>Mientras Lee escuchaba a su maestro no pudo evitar que se le saltasen las lágrimas,
+a pesar de que no había logrado su objetivo, su maestro seguía confiando en él
+y apostando por él para el futuro....</p>
+<p>Ambos terminaron de desayunar juntos, en silencio, pero los sentimientos de Lee habian cambiado por completo,
+ahora se encontraba con fuerzas y con la determinación suficiente como para superar los retos
+que se le presentasen en un futuro...</p>
+<h2>FIN</h2>
+    <button onclick="irAPantalla('pantalla1')">Volver al inicio</button>
+  </section>
+
+  <script>
+    // Cambia de pantalla según el id que se le pase
+    function irAPantalla(id) {
+      // Ocultar todas las secciones
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(sec => sec.classList.remove('activa'));
+
+      // Mostrar solo la sección deseada
+      const destino = document.getElementById(id);
+      if (destino) {
+        destino.classList.add('activa');
+      }
+    }
+  </script>
+
+</body>
+</html>

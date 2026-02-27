@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e0e16;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 23px;
+    background: linear-gradient(
+        120deg,
+        #ff0077, #ff7b00, #ffd300,
+        #00ff88, #00aaff, #a000ff,
+        #ff0077
+    );
+    background-size: 400% 400%;
+    animation: borderMove 6s linear infinite;
+    z-index: 0;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #111;
+    color:white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #111;
+    border-radius: 17px;
+    z-index: 0;
+}
+
+@keyframes borderMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
