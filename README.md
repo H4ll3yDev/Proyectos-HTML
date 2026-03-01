@@ -1,5 +1,5 @@
 ![Border](Assets/Border-animated.png)
 ![Skills](Assets/Skills.png)
-![Loading](Assets/Loading-screen.png.png)
+![Loading](Assets/Loading-screen.png)
 ![Rose](Assets/Rose.png)
 ![Triangle](Assets/Triangle.png)
