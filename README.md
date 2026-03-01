@@ -1,8 +1,3 @@
-![Border](Assets/Border-animated.png)
-![Rose](Assets/Rose.png)
-![Skills](Assets/Skills.png)
-![Loading](Assets/Loading-screen.png)
-![Triangle](Assets/Triangle.png)
 <p align="center">
   <img src="Assets/Rose.png" width="350" />
   <img src="Assets/Skills.png" width="350" style="margin-right: 20px;" />
